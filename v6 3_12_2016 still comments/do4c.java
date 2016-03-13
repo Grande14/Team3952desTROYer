@@ -3,25 +3,27 @@ package org.usfirst.frc.team3952.robot;
 import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.command.Command;
 
-public class do7c extends Command{
+public class do4c extends Command{
 
-	Talon winch;
+	Talon t,t2;
 	
-	//boolean val;
-	public do7c(Talon winchx)
+	public do4c(Talon tx,Talon tx2)
 	{
-		winch=winchx;
+		t=tx;
+		t2=tx2;
 	}
 	
 	@Override
 	protected void initialize() {
 		// TODO Auto-generated method stub
+		
 	}
 
 	@Override
 	protected void execute() {
 		// TODO Auto-generated method stub
-		winch.set(-0.5);
+		t.set(-0.5);
+		t2.set(-0.5);
 	}
 
 	@Override
@@ -42,6 +44,4 @@ public class do7c extends Command{
 		
 	}
 
-	
-	
 }

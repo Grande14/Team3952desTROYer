@@ -35,11 +35,45 @@ public class DriveTrain {
 	//below
 	public void autonD(long start)
 	{
+//		if(!tflag)
+//		{	
+//			time=System.currentTimeMillis(); tflag=true; minus=1;
+//		}
+//		if(System.currentTimeMillis()-time>3000.0)
+//		{
+//			minus*=-1; 
+//			time=System.currentTimeMillis();
+//		}
+//		rd.arcadeDrive(0.0, 0.6*minus, true);
+		
 		while(System.currentTimeMillis()-start<1500)
 			rd.arcadeDrive(-0.9,0.0, true);
+
 	}
 	
 	public void drive(){
+//		if(j.getX()==0.0&&j.getY()==0.0)
+//			willStop=true;
+//		if(j.getRawButton(2)){
+//    		power = 0.6;
+//    		turnRate = 0.6;
+//    		flag = true;
+//    	}
+//    	else if(j.getRawButton(3)){
+//    		if(power>=0.2&&turnRate>=0.2)
+//    		{
+//    			power-=0.1;
+//    			turnRate-=0.1;
+//    		}
+//    	}
+//    	else if(j.getRawButton(4)){
+//    		if(power<=0.9&&turnRate<=0.9)
+//    		{
+//    			power+=0.1;
+//    			turnRate+=0.1;
+//
+//    		}
+//    	}
 		
 		if(j.getRawButton(2))
 		{
